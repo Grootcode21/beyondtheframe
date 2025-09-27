@@ -1390,3 +1390,40 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+  .image-card {
+    position: relative;
+    width: 300px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 20px;
+  }
+  .image-card img {
+    width: 100%;
+    display: block;
+  }
+  .like-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-top: 1px solid #eee;
+    cursor: pointer;
+  }
+  .heart {
+    font-size: 24px;
+    color: #aaa;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  .liked {
+    color: #e63946;
+    transform: scale(1.2);
+  }
+  .like-count {
+    margin-left: 8px;
+    font-size: 16px;
+    color: #333;
+  }
+
