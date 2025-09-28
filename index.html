@@ -52,8 +52,8 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home<br></a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a href="gallery.html"><span>Gallery</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="#">About</a></li>
+          <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="gallery.html">Nature</a></li>
               <li><a href="gallery.html">People</a></li>
@@ -72,8 +72,8 @@
               </li>
             </ul>
           </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -117,19 +117,37 @@
             <div class="gallery-item h-100">
               <img src="assets/img/gallery/smile-0.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/smile-0.jpg" title="sunkissed" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="assets/img/gallery/smile-0.jpg" title="sun-kissed" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
               </div>
+              <div class="image-card">
+              <div class="like-container" onclick="toggleLike(this)">
+                <span class="heart">♡</span>
+                <span class="like-count">0</span>
+              </div>
+            </div>
+
             </div>
           </div><!-- End Gallery Item -->
 
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/smile-1.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/smile-1.jpg" title="Glad-uate" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
+<div class="col-xl-3 col-lg-4 col-md-6">
+  <div class="gallery-item h-100">
+    <img src="assets/img/gallery/smile-1.jpg" class="img-fluid" alt="">
+    
+    <!-- Like feature starts here -->
+    <div class="like-container" onclick="toggleLike(this)">
+      <span class="heart">♡</span>
+      <span class="like-count">0</span>
+    </div>
+    <!-- Like feature ends here -->
+
+    <div class="gallery-links d-flex align-items-center justify-content-center">
+      <a href="assets/img/gallery/smile-1.jpg" title="Glad-uate" class="glightbox preview-link">
+        <i class="bi bi-arrows-angle-expand"></i>
+      </a>
+    </div>
+  </div>
+</div><!-- End Gallery Item -->
+
 
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
@@ -177,6 +195,15 @@
           </div><!-- End Gallery Item -->
 
           <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/scenery-2.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/scenery-2.jpg" title="skycrapper" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
               <img src="assets/img/gallery/Art-2.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
@@ -233,6 +260,25 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+  function toggleLike(container) {
+    const heart = container.querySelector(".heart");
+    const count = container.querySelector(".like-count");
+    let current = parseInt(count.textContent);
+
+    if (heart.classList.contains("liked")) {
+      heart.classList.remove("liked");
+      heart.textContent = "♡";
+      count.textContent = current - 1;
+    } else {
+      heart.classList.add("liked");
+      heart.textContent = "❤";
+      count.textContent = current + 1;
+    }
+  }
+</script>
+
 
    <!--Start of Tawk.to Script-->
   <script type="text/javascript">
