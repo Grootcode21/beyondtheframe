@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index</title>
+  <title>Index - Beyondtheframe</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon-16x16.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -54,7 +54,7 @@
           <li><a href="index.html" class="active">Home<br></a></li>
           <li><a href="#">About</a></li>
           <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
+           <!-- <ul>
               <li><a href="gallery.html">Nature</a></li>
               <li><a href="gallery.html">People</a></li>
               <li><a href="gallery.html">Architecture</a></li>
@@ -70,17 +70,17 @@
                   <li><a href="#">Deep Dropdown 5</a></li>
                 </ul>
               </li>
-            </ul>
+            </ul>-->
           </li>
           <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
       <div class="header-social-links">
         <a href="https://www.twitter.com/" target="_blank" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://www.facebook.com/antique.jahboy" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="https://www.linkedin.com/in/antony-ndichu-1a6490232/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
@@ -96,9 +96,9 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
-            <h2><span>I'm </span><span class="underlight"> Groot</span><br> A Pro<span> Photographer/Artist <br>from Nairobi City</span></h2>
+            <h2><span>I'm </span><span class="underlight"> Groot</span><br> An <span> Artist/Photographer <br>from Nairobi, Kenya</span></h2>
             <p>Capturing Beautiful moments of Art, Smiles & Scenery Without Boundaries.Where Moments Flow Beyond the Frame</p>
-            <p>See Beyond. Feel Beyond. Floooooow Beyond!</p>
+            <p>See Beyond. Feel Beyond. Flow Beyond!</p>
             <a href="#gallery" class="btn-get-started">Experience the Aura<br></a>
           </div>
         </div>
@@ -198,9 +198,27 @@
 
             <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="assets/img/gallery/Art-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/gallery/Art-2.jpeg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/Art-2.jpg" title="Bombastic side eye" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="assets/img/gallery/Art-2.jpeg" title="Bombastic side eye" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/" title="" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/" title="" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
@@ -254,25 +272,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <script>
-  function toggleLike(container) {
-    const heart = container.querySelector(".heart");
-    const count = container.querySelector(".like-count");
-    let current = parseInt(count.textContent);
-
-    if (heart.classList.contains("liked")) {
-      heart.classList.remove("liked");
-      heart.textContent = "♡";
-      count.textContent = current - 1;
-    } else {
-      heart.classList.add("liked");
-      heart.textContent = "❤";
-      count.textContent = current + 1;
-    }
-  }
-</script>
-
 
    <!--Start of Tawk.to Script-->
   <script type="text/javascript">
